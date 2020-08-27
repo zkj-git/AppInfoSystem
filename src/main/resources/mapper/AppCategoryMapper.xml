@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.appsys.dao.appcategory.AppCategoryMapper">
+	
+	<!-- 根据parentId查询分类 -->
+	<select id="getCateGoryByParentId" resultType="AppCategory">
+		SELECT * from app_category where 1=1
+		
+		<!-- 如果为null查询一级分类，一级分类parentId为null  -->
+		<if test="list==null">
+			AND parentId is null
+		</if>
+		
+		<!-- 如果不为null则查询二级或三级分类 -->
+		<if test="list!=null">
+			AND parentId in
+			<foreach collection="list" item="parentId" open="(" separator="," close=")">
+				 #{parentId}
+			</foreach>
+		</if>
+	</select>
+</mapper>

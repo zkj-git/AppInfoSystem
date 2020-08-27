@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/appsys/controller/backend/BackendAppInfoController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/appsys/controller/backend/BackendLoginController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/appsys/controller/dev/AppInfoController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/appsys/service/dev/impl/AppInfoServiceImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/appsys/tools/Constants.java" charset="GBK" />
+  </component>
+</project>
